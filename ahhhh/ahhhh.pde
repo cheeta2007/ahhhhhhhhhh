@@ -7,6 +7,9 @@ appWidth = width;
 appHeight = height;
 population();
 faceSetup();
+eyeSetup();
+mouthSetup();
+ahhhhSetup();
 }
 void draw()
 {
