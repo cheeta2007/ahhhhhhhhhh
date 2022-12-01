@@ -10,4 +10,9 @@ rectFaceHeight = smallerDimension;
 faceX = centerX;
 faceY = centerY;
 faceDiameter = smallerDimension;
+eyeLeftX = appWidth*1.4/4;
+eyeRightX = appWidth*2.6/4;
+eyeLeftY = appHeight*1/4;
+eyeRightY = eyeLeftY;
+eyeDiameter = smallerDimension*1/4;
 }
