@@ -1,5 +1,5 @@
 boolean landscape=false, portrait=false;
 void displayOrientation()
 {
-landscape = true;
+if (width >= height) {landscape=true;} else {portrait=true;};
 }
