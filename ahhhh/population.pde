@@ -1,7 +1,7 @@
 void population()
 {
 float centerX = appWidth * 1/2, centerY = appHeight * 1/2;
-float smallerDimension;
+int smallerDimension;
 smallerDimension = (landscape==true) ? height: width ;
 rectFaceX = centerX - smallerDimension*1/2;
 rectFaceY = appHeight * 0;
@@ -15,4 +15,9 @@ eyeRightX = appWidth*2.6/4;
 eyeLeftY = appHeight*1/4;
 eyeRightY = eyeLeftY;
 eyeDiameter = smallerDimension*1/4;
+mouthX1 = eyeLeftX;
+mouthY1 = smallerDimension*3/4;
+mouthX2 = eyeRightX;
+mouthY2 = mouthY1;
+mouthOpen = smallerDimension*1/4;
 }

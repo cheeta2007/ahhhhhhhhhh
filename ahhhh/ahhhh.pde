@@ -1,4 +1,5 @@
 int appWidth, appHeight;
+int reset=1;
 void setup()
 {
 size(600, 400);
