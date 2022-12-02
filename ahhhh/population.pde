@@ -19,5 +19,11 @@ mouthX1 = eyeLeftX;
 mouthY1 = smallerDimension*3/4;
 mouthX2 = eyeRightX;
 mouthY2 = mouthY1;
-mouthOpen = smallerDimension*1/4;
+mouthOpen = smallerDimension*1/6;
+  xNose1 = faceX;
+  yNose1 = eyeLeftY;
+  xNose2 = faceX - eyeLeftY*1/2;
+  yNose2 = faceY;
+  xNose3 = faceX + eyeLeftY*1/2;
+  yNose3 = faceY;
 }
