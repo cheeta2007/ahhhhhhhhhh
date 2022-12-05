@@ -3,6 +3,7 @@ int reset=1;
 color resetWhite=#FFFFFF;
 boolean nightMode=false;
 boolean start=false;
+//boolean random=false; //code not in use
 void setup()
 {
 size(600, 400);
@@ -10,12 +11,12 @@ displayOrientation();
 appWidth = width;
 appHeight = height;
 population();
-faceBox();
+faceBox(); //disable this to get rid of the box behind the face
 faceSetup();
 eyeSetup();
 mouthSetup();
 noseSetup();
-println("start: press space. reset: press r. quit: press q");
+println("start/stop toggle: press space. night mode: press n. reset: press r. quit: press q");
 }
 void draw()
 {
@@ -23,6 +24,7 @@ if(start==true) ahhhhSetup();
 if(start==true) eyeSetup();
 if(start==true) mouthSetup();
 if(start==true) noseSetup();
+//if(random==false) random=true; else {random=false;} //code not in use
 }
 void keyPressed()
 {
@@ -36,9 +38,9 @@ void keyPressed()
 if (key=='q' | key=='Q' ) exit();
 if (key=='r' | key=='R' )faceBox();
 if (key=='r' | key=='R' )faceSetup();
-if (key=='r' | key=='R' )eyeSetup();
-if (key=='r' | key=='R' )mouthSetup();
-if (key=='r' | key=='R' )noseSetup();
+if (key=='r' | key=='R' )eyeSetup();//disable this for a bug
+if (key=='r' | key=='R' )mouthSetup();//disable this for a bug
+if (key=='r' | key=='R' )noseSetup();//disable this for a bug
 if (key==' ') if (start==true) {start=false;} else{start=true;}
 }
 void mousePressed()
