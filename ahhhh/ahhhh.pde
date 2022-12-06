@@ -38,10 +38,11 @@ void keyPressed()
 if (key=='q' | key=='Q' ) exit();
 if (key=='r' | key=='R' )faceBox();
 if (key=='r' | key=='R' )faceSetup();
-if (key=='r' | key=='R' )eyeSetup();//disable this for a bug
-if (key=='r' | key=='R' )mouthSetup();//disable this for a bug
-if (key=='r' | key=='R' )noseSetup();//disable this for a bug
+if (key=='r' | key=='R' )eyeSetup();
+if (key=='r' | key=='R' )mouthSetup();
+if (key=='r' | key=='R' )noseSetup();
 if (key==' ') if (start==true) {start=false;} else{start=true;}
+if (key=='*') needlessCode();
 }
 void mousePressed()
 {
